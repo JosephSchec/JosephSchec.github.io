@@ -11,16 +11,23 @@
     <style>
         :root {
             --pink: #ff8686ad;
-            --ligtblue: #c2e2fd; 
-          
+            --ligtblue: #c2e2fd;
+
         }
 
         body {
             background-color: var(--ligtblue);
         }
 
-        .container-fluid{
-            background-color: var(--pink);
+        .back {
+            /* background: rgb(254,231,234);
+            background: linear-gradient(180deg, rgba(254,231,234,1) 39%, rgba(254,219,224,1) 64%, rgba(254,216,222,1) 69%, rgba(252,203,211,1) 95%); */
+            background: rgb(247, 214, 224);
+            background: linear-gradient(180deg, rgba(247, 214, 224, 1) 0%, rgba(237, 222, 239, 1) 51%, var(--ligtblue) 100%);
+        }
+        .imgBack{
+            background: rgb(247,214,224);
+background: linear-gradient(180deg, rgba(247,214,224,1) 0%, rgba(243,218,232,1) 100%);
         }
 
         h1 {
@@ -30,7 +37,38 @@
         li .nav-link:hover {
             background-color: #157ed4;
         }
-  
+
+        #noGlow {
+            box-shadow: none;
+            border-color: rgba(0, 0, 0, .125);
+        }
+
+        .carouselButtons {
+            display: flex;
+            justify-content: space-around;
+            position: absolute;
+            bottom: 3em;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        @media screen and (min-width:1000px) {
+            .carouselButtons {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                bottom: 3em;
+                left: 0;
+                right: 0;
+                margin: auto;
+                width: 10%;
+            }
+
+            #snobzGit {
+                margin-top: 1em;
+            }
+        }
     </style>
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
@@ -48,181 +86,241 @@
             <p class="fs-5 mb-4">Student at Agudah PCS</p>
         </div>
     </header>
+    <div class="back">
+        <div class="container-fluid">
+            <div class="py-sm-0 py-md-4 row justify-content-center">
+                <div class="d-none d-md-flex d-flex flex-column flex-shrink-0 p-3 text-white bg-dark rounded"
+                    style="width: 200px;">
+                    <div
+                        class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none text-center">
+                        <svg class="bi me-2" width="0" height="0">
+                            <use xlink:href="#bootstrap" />
+                        </svg>
+                        <span class="fs-4">Yossi Schechter</span>
+                    </div>
+                    <hr>
+                    <ul class="nav nav-pills flex-column ">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active" aria-current="page">
+                                <svg class="bi me-2" width="16" height="16">
+                                    <use xlink:href="#home" />
+                                </svg>
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#skills" class="nav-link  text-white">
+                                <svg class="bi me-2" width="16" height="16">
+                                    <use xlink:href="#speedometer2" />
+                                </svg>
+                                Skills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Projects" class="nav-link text-white">
+                                <svg class="bi me-2" width="16" height="16">
+                                    <use xlink:href="#table" />
+                                </svg>
+                                Projects
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Connect" class="nav-link text-white">
+                                <svg class="bi me-2" width="16" height="16">
+                                    <use xlink:href="#table" />
+                                </svg>
+                                Connect
+                            </a>
+                        </li>
 
-    <div class="container-fluid">
-        <div class="py-4 row justify-content-center">
-            <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 200px;">
-                <div class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none text-center">
-                    <svg class="bi me-2" width="0" height="0">
-                        <use xlink:href="#bootstrap" />
-                    </svg>
-                    <span class="fs-4">Yossi Schechter</span>
+                    </ul>
+
                 </div>
-                <hr>
-                <ul class="nav nav-pills flex-column ">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link active" aria-current="page">
-                            <svg class="bi me-2" width="16" height="16">
-                                <use xlink:href="#home" />
-                            </svg>
-                            About
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#skills" class="nav-link  text-white">
-                            <svg class="bi me-2" width="16" height="16">
-                                <use xlink:href="#speedometer2" />
-                            </svg>
-                            Skills
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#Connect" class="nav-link text-white">
-                            <svg class="bi me-2" width="16" height="16">
-                                <use xlink:href="#table" />
-                            </svg>
-                            Connect
-                        </a>
-                    </li>
-                </ul>
+                <div class="col-sm-10 col-md-5 m-2 m-md-0">
+                    <div class="card  " style="width: 100%; height: 100%;">
+                        <img src="images/cardphoto.png" class="card-img-top img-fluid-center imgBack"
+                             alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-center">Hello I'm Yossi, Welcome To My Portfolio
 
-            </div>
-            <div class="col-5 ">
-                <div class="card  " style="width: 100%; height: 100%;">
-                    <img src="images/cardphoto.png" class="card-img-top img-fluid-center"
-                        style="background-color: #c2e2fd;" alt="...">
-                    <div class="card-body">
-                        <p class="card-text text-center">Hello I'm Yossi, Welcome To My Portfolio
-
-                        </p>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="container-fluid">
-        <header class=" text-secondary text-center">
-            <div class="py-2">
-                <h1 class="fw-bold text-decoration-underline" id="skills">Skills</h1>
-            </div>
-        </header>
-        <div class="row">
-            <div class="col-sm-12 col-lg-8 m-auto p-4 flex-shrink-0">
-                <div class="accordion-body text-center" id="Skills">
-                    <div class="accordion-item" style="background-color: var(--ligtblue);">
-                        <h2 class="accordion-header" id="skillsHeading">
-                            <button class="accordion-button text-center" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseSkills" aria-expanded="false" aria-controls="collapseSkills">
-                                Skills
-                            </button>
-                        </h2>
-                        <div id="collapseSkills" class="accordion-collapse  collapse show"
-                            aria-labelledby="skillsHeading" data-bs-parent="#Skills">
-                            <div class="accordion-body">
-                                <ul class="list-group">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header ">
-                                            <li class="text-center list-group-item accordion-button bg-dark text-white fs-2"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseJava"
-                                                aria-expanded="true" aria-controls="collapseJava" id="JavaHeading">Java
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z" />
-                                                </svg>
-                                            </li>
-                                        </h2>
-                                        <div id="collapseJava" class="accordion-collapse  collapse show"
-                                            aria-labelledby="JavaHeading" data-bs-parent="#Java">
-                                            <div class="accordion-body fs-5 text-center btn-outline">
-                                                <strong>Java Skills: </strong>
-                                                <ul>
-                                                    <li>OOP</li>
-                                                    <li>Database Connection with JDBC</li>
-                                                    <li>File Creation</li>
-                                                </ul>
+        <div class="container-fluid">
+            <header class=" text-secondary text-center">
+                <div class="py-2">
+                    <h1 class="fw-bold text-decoration-underline" id="skills">Skills</h1>
+                </div>
+            </header>
+            <div class="row">
+                <div class="col-sm-12 col-lg-8 m-auto p-4 flex-shrink-0">
+                    <div class="accordion-body text-center" id="Skills">
+                        <div class="accordion-item" style="background-color: var(--ligtblue);">
+                            <h2 class="accordion-header" id="skillsHeading">
+                                <button class="accordion-button text-center" type="button" data-bs-toggle="collapse"
+                                    id='noGlow' data-bs-target="#collapseSkills" aria-expanded="false"
+                                    aria-controls="collapseSkills">
+                                    Skills
+                                </button>
+                            </h2>
+                            <div id="collapseSkills" class="accordion-collapse  collapse show"
+                                aria-labelledby="skillsHeading" data-bs-parent="#Skills">
+                                <div class="accordion-body">
+                                    <ul class="list-group">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header ">
+                                                <li class="text-center list-group-item accordion-button bg-dark text-white fs-2"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseJava"
+                                                    aria-expanded="true" aria-controls="collapseJava" id="JavaHeading">
+                                                    Java
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-caret-down"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z" />
+                                                    </svg>
+                                                </li>
+                                            </h2>
+                                            <div id="collapseJava" class="accordion-collapse  collapse show"
+                                                aria-labelledby="JavaHeading" data-bs-parent="#Java">
+                                                <div class="accordion-body fs-5 text-center btn-outline">
+                                                    <strong>Java Skills: </strong>
+                                                    <ul>
+                                                        <li>OOP</li>
+                                                        <li>Database Connection with JDBC</li>
+                                                        <li>File Creation</li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header ">
-                                            <li class="text-center list-group-item bg-dark text-white fs-2"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseSQL"
-                                                aria-expanded="true" aria-controls="collapseSQL" id="SQLHeading">SQL
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z" />
-                                                </svg>
-                                            </li>
-                                        </h2>
-                                        <div id="collapseSQL" class="accordion-collapse  collapse"
-                                            aria-labelledby="SQLHeading" data-bs-parent="#SQL">
-                                            <div class="accordion-body fs-5 justify-content-center btn-outline">
-                                                <strong>SQL and Database Knowledge: </strong>
-                                                <ul>
-                                                    <li>Creating/Designing Databases</li>
-                                                    <li>Execute Queries</li>
-                                                    <li>Execute Updates</li>
-                                                </ul>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header ">
+                                                <li class="text-center list-group-item bg-dark text-white fs-2"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseSQL"
+                                                    aria-expanded="true" aria-controls="collapseSQL" id="SQLHeading">SQL
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-caret-down"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z" />
+                                                    </svg>
+                                                </li>
+                                            </h2>
+                                            <div id="collapseSQL" class="accordion-collapse  collapse"
+                                                aria-labelledby="SQLHeading" data-bs-parent="#SQL">
+                                                <div class="accordion-body fs-5 justify-content-center btn-outline">
+                                                    <strong>SQL and Database Knowledge: </strong>
+                                                    <ul>
+                                                        <li>Creating/Designing Databases</li>
+                                                        <li>Execute Queries</li>
+                                                        <li>Execute Updates</li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header ">
-                                            <li class="text-center list-group-item accordion-button bg-dark text-white fs-2"
-                                                data-bs-toggle="collapse" data-bs-target="#collapsePython"
-                                                aria-expanded="true" aria-controls="collapsePython" id="pythonHeading">
-                                                Python <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z" />
-                                                </svg>
-                                            </li>
-                                        </h2>
-                                        <div id="collapsePython" class="accordion-collapse  collapse btn-outline"
-                                            aria-labelledby="pythonHeading" data-bs-parent="#python">
-                                            <div class="accordion-body fs-5">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header ">
+                                                <li class="text-center list-group-item accordion-button bg-dark text-white fs-2"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapsePython"
+                                                    aria-expanded="true" aria-controls="collapsePython"
+                                                    id="pythonHeading">
+                                                    Python <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                        height="16" fill="currentColor" class="bi bi-caret-down"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z" />
+                                                    </svg>
+                                                </li>
+                                            </h2>
+                                            <div id="collapsePython" class="accordion-collapse  collapse btn-outline"
+                                                aria-labelledby="pythonHeading" data-bs-parent="#python">
+                                                <div class="accordion-body fs-5">
 
-                                                <strong>Python Ability: </strong>
-                                                <ul>
-                                                    <li>Familiar with Libraries</li>
-                                                    <li>Familiar with Automation</li>
-                                                </ul>
+                                                    <strong>Python Ability: </strong>
+                                                    <ul>
+                                                        <li>Familiar with Libraries</li>
+                                                        <li>Familiar with Automation</li>
+                                                    </ul>
 
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                            <li class="text-center list-group-item accordion-button bg-dark text-white fs-2"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseHtml"
-                                                aria-expanded="true" aria-controls="collapseHtml" id="htmlHeading">
-                                                HTML/CSS <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z" />
-                                                </svg>
-                                            </li>
-                                        </h2>
-                                        <div id="collapseHtml" class="accordion-collapse  collapse btn-outline"
-                                            aria-labelledby="htmlHeading" data-bs-parent="#html">
-                                            <div class="accordion-body fs-5">
-                                                <strong>HTML / CSS: </strong>
-                                                <ul>
-                                                    <li>Webpage Layout</li>
-                                                    <li>Css Grid</li>
-                                                    <li>Flexbox</li>
-                                                    <li>Bootstrap</li>
-                                                </ul>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <li class="text-center list-group-item accordion-button bg-dark text-white fs-2"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseHtml"
+                                                    aria-expanded="true" aria-controls="collapseHtml" id="htmlHeading">
+                                                    HTML/CSS <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                        height="16" fill="currentColor" class="bi bi-caret-down"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z" />
+                                                    </svg>
+                                                </li>
+                                            </h2>
+                                            <div id="collapseHtml" class="accordion-collapse  collapse btn-outline"
+                                                aria-labelledby="htmlHeading" data-bs-parent="#html">
+                                                <div class="accordion-body fs-5">
+                                                    <strong>HTML / CSS: </strong>
+                                                    <ul>
+                                                        <li>Webpage Layout</li>
+                                                        <li>Css Grid</li>
+                                                        <li>Flexbox</li>
+                                                        <li>Bootstrap</li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </ul>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid mb-4">
+            <header class=" text-secondary px-4 text-center">
+                <div class="py-1">
+                    <h1 class="display-8 fw-bold text-decoration-underline" id="Projects">Projects</h1>
+                </div>
+            </header>
+            <div class="container text-center" id="Projects">
+                <div id="projectCarosel" class="carousel slide justify-self-center" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#projectCarosel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#projectCarosel" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#projectCarosel" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/snobz.png" class="d-block w-25 m-auto h-100" alt="snobz"
+                                style="width: 200px;">
+                            <div class="carouselButtons ">
+                                <div id="snobz" type="button" class="btn btn-dark  btn-outline-primary">Snobz App</div>
+                                <div id="snobzGit" type="button" class="btn btn-secondary  btn-outline-warning">GitHub
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#projectCarosel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#projectCarosel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -275,6 +373,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
