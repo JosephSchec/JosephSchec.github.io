@@ -23,11 +23,11 @@
             getId(head).addEventListener('click', () => {
                 let lang = head.split('Head')[0];
                 if (!open) {
-                    getId(head).firstElementChild.setAttribute('style', "transition: .25s ; transform : rotate(180deg);");
+                    getId(head).firstElementChild.setAttribute('style', "transition: .15s ; transform : rotate(180deg);");
                     getId(`collapse${lang.charAt(0).toUpperCase() + lang.slice(1)}`).classList.add('show');
                     open = true;
                 } else {
-                    getId(head).firstElementChild.setAttribute('style', "transition: .25s ; transform : rotate(0deg);");
+                    getId(head).firstElementChild.setAttribute('style', "transition: .15s ; transform : rotate(0deg);");
                     getId(`collapse${lang.charAt(0).toUpperCase() + lang.slice(1)}`).classList.remove('show');
                     open = false;
                 }
