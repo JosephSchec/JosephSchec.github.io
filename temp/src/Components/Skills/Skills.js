@@ -7,7 +7,7 @@ export default function Skills() {
     return (<>
 
         <div className={opacity ? 'newSection' : ' newSection @apply opacity-100'} id='skills'>
-            <h2> Skills:</h2>
+            <h1> Skills:</h1>
             <div className='@apply grid w-full md:grid-cols-2 lg:grid-cols-3'>
                 <DropDown language='Java' skills={['OOP', 'Database Connection with JDBC', 'File Creation']} />
                 <DropDown language='SQL' skills={['Creating/Designing Databases', 'Execute Queries', 'Execute Updates']} />

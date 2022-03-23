@@ -19,7 +19,7 @@ export default function Projects() {
   return (
     <>
       <div className={opacity ? 'newSection' : ' newSection @apply opacity-100'}>
-        <h2 id='projects'>Projects:</h2>
+        <h1 id='projects'>Projects:</h1>
       </div>
       <div className={opacity ? '@apply opacity-0' : styles.center}>
         <div className={styles.carousel}>
