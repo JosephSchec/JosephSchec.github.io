@@ -1,7 +1,7 @@
 import './App.css';
 import { Navigate, Outlet, Route, Routes } from 'react-router-dom';
 import Navbar from './Components/Navbar';
-import PageLayout from './Components/PageLayout';
+import PageLayout from './HelperFunctions/PageLayout';
 
 function App() {
   return (

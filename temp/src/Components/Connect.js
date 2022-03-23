@@ -5,7 +5,7 @@ import styles from '../Styles/Connect.module.css'
 export default function Connect() {
     return (
         <div className={'newSection @apply opacity-100 mb-4'} id='connect'>
-            <h1 className='@apply mt-0 '>Connect</h1>
+            <h1 className='@apply mt-0 mb-4 '>Connect</h1>
             <ul className={styles.list}>
                 <IconContext.Provider value={{ size: 60, className: "@apply text-fuchsia-600 " }}>
                     <li>

@@ -1,9 +1,9 @@
 import React from 'react'
 import DropDown from './DropDown'
-import useScroll from '../useScroll';
+import useScroll from '../../HelperFunctions/useScroll';
 
 export default function Skills() {
-    const opacity = useScroll(312)
+    const opacity = useScroll(250)
     return (<>
 
         <div className={opacity ? 'newSection' : ' newSection @apply opacity-100'} id='skills'>

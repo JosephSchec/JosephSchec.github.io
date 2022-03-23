@@ -5,6 +5,17 @@
   html,body{
     @apply bg-gradient-to-t from-cyan-200 via-teal-200 to-cyan-200 bg-no-repeat scroll-smooth ;
   }
+ 
+*::-webkit-scrollbar {
+    width: 12px;
+}
+*::-webkit-scrollbar-track {
+ @apply bg-gradient-to-t from-red-300 via-purple-400 to-blue-300;
+}
+
+*::-webkit-scrollbar-thumb {
+  @apply bg-zinc-500 rounded-lg;
+}
    .newSection{
     @apply
     flex 

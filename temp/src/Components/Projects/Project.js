@@ -1,5 +1,5 @@
 import React from 'react'
-import useGitHub from '../useGitHub'
+import useGitHub from '../../HelperFunctions/useGitHub'
 import styles from '../../Styles/Projects/Project.module.css'
 import { FiExternalLink } from 'react-icons/fi'
 import { AiFillGithub } from 'react-icons/ai'

@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Project from './Project';
 import styles from '../../Styles/Projects/Projects.module.css'
-import useScroll from '../useScroll';
+import useScroll from '../../HelperFunctions/useScroll';
 const settings = {
   infinite: true,
   speed: 500,
@@ -15,7 +15,7 @@ const settings = {
 };
 
 export default function Projects() {
-  const opacity = useScroll(700)
+  const opacity = useScroll(400)
   return (
     <>
       <div className={opacity ? 'newSection' : ' newSection @apply opacity-100'}>
