@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://josephsch.site/",
+  "homepage": "https://josephschec.github.io/",
   "dependencies": {
     "@octokit/rest": "^18.12.0",
     "@testing-library/jest-dom": "^5.16.1",
