@@ -36,11 +36,8 @@
     bg-cyan-100
     rounded-lg
    }
-   .dark-mode {
-    @apply bg-black text-white
-  }
-  .dark-mode img{
-    @apply bg-white
-  }
   
+   .clickable{
+    @apply cursor-pointer;
+  }
   }

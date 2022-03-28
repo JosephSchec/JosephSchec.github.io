@@ -15,10 +15,18 @@
     bg-black 
     text-sky-200 
     text-lg 
-    text-center
-    min-w-min max-w-fit
-}
+    h-48
+    w-8/12
+    min-w-fit max-w-fit;
 
-.about > h1{
-    @apply underline font-bold text-lg text-teal-300
+    font-family: 'Fira Code', monospace;
+}
+.about p span{
+    display: block;
+    overflow: hidden;
+    font-size: 1.1rem;
+
+}
+.about > p{
+    @apply  font-bold text-lg text-teal-300
 }
