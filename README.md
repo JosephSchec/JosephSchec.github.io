@@ -1,6 +1,13 @@
 ## Hi Im Joseph this is my Portfolio
 
-#### Technologies used / Things I learned:
+#### Technologies Used :
 * reactJS (and react slick)
-* TailwindCSS
-* GIthub API with @octokit/rest
+* File-Saver library
+* qrcode.react 
+* slick-carousel 
+* react-icons
+
+#### Things I Learned :
+* Tailwind CSS
+* How to get My github README files with GIthub API (@octokit/rest)
+* Made This Project Section With README Style notation
