@@ -40,7 +40,7 @@
   hidden 
   md:inline-block;
 }
-.link:last-child , .link:first-child{
+.link:last-child {
   @apply
   hidden
   md:flex
