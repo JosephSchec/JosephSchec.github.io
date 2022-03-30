@@ -28,6 +28,8 @@ export default function Projects() {
             <Project projectTitle='Snobz2 Webpack-Version' qrCodeTo='https://snobz2.vercel.app/' github='https://github.com/JosephSchec/Snobz2' repository='Snobz2' />
             <Project projectTitle='Snobz React-Version' qrCodeTo='https://snobzz.vercel.app/' github='https://github.com/JosephSchec/snobz-react' repository='snobz-react' />
             <Project projectTitle='Zmanim' github='https://github.com/JosephSchec/zmanim' repository='zmanim' />
+            <Project projectTitle='Portfolio' github='https://github.com/JosephSchec/josephschec.github.io' repository='josephschec.github.io' />
+
           </Slider>
         </div>
       </div>

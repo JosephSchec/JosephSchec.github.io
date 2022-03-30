@@ -16,7 +16,7 @@ export default function Project(props) {
 
             <div className={styles.project}>
 
-                {qrCodeTo && <QRCode value={qrCodeTo} />}
+                {qrCodeTo && <QRCode value={qrCodeTo} className='rounded-xl' />}
                 <div className={styles.links}>
                     {
                         qrCodeTo &&
