@@ -1,0 +1,32 @@
+
+.card{
+    @apply  
+    flex
+    flex-col
+    items-center 
+    m-auto
+    w-full
+    
+}
+.about{
+    @apply 
+    p-2
+    m-auto
+    bg-black 
+    text-sky-200 
+    text-lg 
+    h-48
+    w-8/12
+    min-w-fit max-w-fit;
+
+    font-family: 'Fira Code', monospace;
+}
+.about p span{
+    display: block;
+    overflow: hidden;
+    font-size: 1.1rem;
+
+}
+.about > p{
+    @apply  font-bold text-lg text-teal-300
+}
