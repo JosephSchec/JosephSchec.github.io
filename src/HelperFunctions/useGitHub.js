@@ -10,7 +10,6 @@ export default function useGitHub(repository) {
     useEffect(() => (async () => {
         const myReadMes = atob(await (await octokit.rest.repos.getReadme({ owner, repo })).data.content)
         let readMeArr=myReadMes.split('####');
-        console.log(readMeArr)
         let paragraphView=''
         for (let i = 1; i < readMeArr.length; i++) {
             paragraphView += readMeArr[i]+'\n'
