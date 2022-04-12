@@ -7,7 +7,7 @@ function App() {
   return (
     <><Navbar />
     <PageLayout/>
-      
+  
       <Routes>
         <Route index element={<></>} />
         <Route path='*' element={<Navigate to='/' replace='true' />} />

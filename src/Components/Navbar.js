@@ -9,7 +9,7 @@ const download = () => saveAs(resume, 'JosephSchechterResume.pdf')
 
 
 export default function Navbar() {
-  
+
     return (
 
 
@@ -19,7 +19,7 @@ export default function Navbar() {
 
 
                 <ul className={styles.list}>
-                    
+
                     <li className={styles.link}>
 
                         <BsCardChecklist />
@@ -36,7 +36,7 @@ export default function Navbar() {
                         <a href='#connect'> <p> Connect</p></a>
                     </li>
                     <li className={styles.link}>
-                        <BsDownload className='animate-bounce clickable' onClick={download}/>
+                        <BsDownload className='animate-bounce clickable' onClick={download} />
                         <button onClick={download}><p>Resume</p></button>
                     </li>
 

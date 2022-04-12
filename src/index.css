@@ -3,15 +3,13 @@
 @tailwind utilities;
 @layer components {
   html,body{
-    @apply bg-gradient-to-t from-cyan-200 via-teal-200 to-cyan-200 bg-no-repeat scroll-smooth ;
+    @apply  bg-gradient-to-b from-violet-700 via-blue-400 to-violet-700 bg-no-repeat scroll-smooth ;
   }
  
 *::-webkit-scrollbar {
     width: 12px;
 }
-*::-webkit-scrollbar-track {
- @apply bg-gradient-to-t from-red-300 via-purple-400 to-blue-300;
-}
+
 
 *::-webkit-scrollbar-thumb {
   @apply bg-zinc-500 rounded-lg;
@@ -33,7 +31,7 @@
     text-blue-700
     font-bold 
     underline 
-    bg-cyan-100
+    bg-cyan-400
     rounded-lg
    }
   

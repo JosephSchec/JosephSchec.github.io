@@ -15,16 +15,16 @@ export default function useGitHub(repository) {
             paragraphView += readMeArr[i]+'\n'
         }
         
-        let points= paragraphView.split('*').map(bullet=>{
+        let points= paragraphView.split('*').map((bullet,i)=>{
             if(bullet.includes(':')||bullet.includes('?')){
                 if(bullet.includes('T')){
-                    return <li className='underline font-bold text-lg'>T{bullet.split('T')[1]}</li>
+                    return <li key={i} className='underline font-bold text-lg'>T{bullet.split('T')[1]}</li>
                 } 
                  if(bullet.includes('W')){
-                    return <li className='underline font-bold text-lg' >W{bullet.split('W')[1]}</li>
+                    return <li key={i} className='underline font-bold text-lg' >W{bullet.split('W')[1]}</li>
                 }
             }
-            return <li className='text-left list-disc list-inside'>{bullet}</li>
+            return <li key={i} className='text-left list-disc list-inside'>{bullet}</li>
         });
         setReadme(points)
     })(), [repo])

@@ -16,6 +16,10 @@
     opacity-80
     h-48
     overflow-auto
+    rounded-lg
+    border-2
+    border-blue-400
+   shadow-md shadow-indigo-500/50
 }
 .project a {
    @apply 

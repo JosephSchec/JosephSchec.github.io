@@ -30,12 +30,12 @@
 }
 .link p{
   @apply  
-  text-sky-500 
+  text-cyan-400 
   font-bold  
 }
 .link svg{
   @apply 
-  text-zinc-500 
+  text-slate-300 
   m-1 
   hidden 
   md:inline-block;
