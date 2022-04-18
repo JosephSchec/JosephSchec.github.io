@@ -30,7 +30,7 @@
 }
 .link p{
   @apply  
-  text-cyan-400 
+  text-cyan-300 
   font-bold  
 }
 .link svg{

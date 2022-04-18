@@ -4,10 +4,10 @@ import { FaRegEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa'
 import styles from '../Styles/Connect.module.css'
 export default function Connect() {
     return (
-        <div className={'newSection @apply opacity-100 mb-4'} id='connect'>
+        <div className={'newSection opacity-100 mb-4'} id='connect'>
             <h1 className='@apply mt-0 mb-4 '>Connect</h1>
             <ul className={styles.list}>
-                <IconContext.Provider value={{ size: 60, className: "@apply text-fuchsia-600 " }}>
+                <IconContext.Provider value={{ size: 60, className: "h-full w-full text-violet-500 hover:text-gray-300 " }}>
                     <li>
                         <a href="https://github.com/JosephSchec" target="_blank"
                             rel="noreferrer"> <FaGithub /></a>

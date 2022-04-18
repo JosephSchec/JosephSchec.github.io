@@ -3,18 +3,18 @@
 @tailwind utilities;
 @layer components {
   html,body{
-    @apply  bg-gradient-to-b from-violet-700 via-blue-400 to-violet-700 bg-no-repeat scroll-smooth ;
+    @apply  bg-gradient-to-b from-violet-400 via-blue-300 to-violet-400 bg-no-repeat scroll-smooth ;
   }
  
 *::-webkit-scrollbar {
     width: 12px;
 }
 *::-webkit-scrollbar-track {
-  @apply bg-gray-200;
+  @apply bg-blue-300;
  }
 
 *::-webkit-scrollbar-thumb {
-  @apply bg-zinc-500 rounded-lg;
+  @apply bg-zinc-400 rounded-lg;
 }
    .newSection{
     @apply
@@ -33,7 +33,7 @@
     text-blue-700
     font-bold 
     underline 
-    bg-cyan-400
+    bg-cyan-300/50
     rounded-lg
    }
   

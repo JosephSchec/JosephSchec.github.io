@@ -8,3 +8,12 @@
     h-max 
     items-center
 }
+.list li{
+    @apply
+    bg-gray-300
+    p-3
+    rounded-full
+    shadow-xl
+    mb-4
+    hover:bg-violet-500 
+}

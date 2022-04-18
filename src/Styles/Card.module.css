@@ -12,12 +12,12 @@
     @apply 
     p-2
     m-auto
-    bg-black 
-    text-sky-200 
+    bg-slate-900/75 
     text-lg 
     w-8/12
-    min-w-fit max-w-fit;
-
+     rounded-b-xl 
+     min-w-fit max-w-fit;
+   
     font-family: 'Fira Code', monospace;
 }
 .about p span{
@@ -27,5 +27,5 @@
 
 }
 .about > p{
-    @apply  font-bold text-lg text-teal-300
+    @apply  font-bold text-lg text-teal-200
 }
