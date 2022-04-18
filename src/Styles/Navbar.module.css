@@ -1,6 +1,6 @@
 
 .topCenter{
-    @apply flex justify-center sticky top-0
+    @apply flex justify-center sticky top-0 z-50
 }
 .details{
 @apply  
