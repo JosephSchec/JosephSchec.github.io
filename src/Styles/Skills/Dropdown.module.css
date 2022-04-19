@@ -13,6 +13,7 @@
     bg-violet-200
     cursor-pointer
     h-max
+    min-w-fit
 }
 .title{
     @apply 

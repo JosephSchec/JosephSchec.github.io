@@ -16,10 +16,9 @@ export default function Skills() {
                 <DropDown language='JavaScript' skills={['Vanilla JS', 'Node JS', 'React', 'Familiar With Angular and React Native Frameworks']} />
             </div>
         </div>
-        <div className={opacity ? 'newSection' : ' newSection opacity-100'} >
-            <h1>TL;DR</h1>
-        <Tldr />
-        </div>
+        
+        <Tldr opacity={opacity}/>
+      
     </>
     )
 }

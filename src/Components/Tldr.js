@@ -7,7 +7,7 @@ import {
     SiJava, SiJavascript, SiNodedotjs, SiPython, SiAngularjs, SiMongodb, SiMysql, SiReact,
 } from 'react-icons/si'
 
-export default function Tldr() {
+export default function Tldr({opacity}) {
     const icons = {
         size: 60,
         className: " bg-violet-500 text-slate-200 p-2 m-2 rounded-lg"
@@ -42,6 +42,7 @@ export default function Tldr() {
 
     return (
         <>
+        <div className={opacity ? 'newSection' : ' newSection opacity-100 hidden md:block m-auto'} >
             <div className={styles.marquee}>
                 <motion.div
                     className={styles.track}
@@ -81,7 +82,7 @@ export default function Tldr() {
                     </IconContext.Provider>
                 </motion.div>
             </div>
-        
+        </div>
         </>
     );
 };
