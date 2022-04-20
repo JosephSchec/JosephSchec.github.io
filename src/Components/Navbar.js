@@ -2,7 +2,7 @@ import React from 'react';
 import { BsCardChecklist, BsLaptop, BsChat, BsDownload } from 'react-icons/bs'
 import styles from '../Styles/Navbar.module.css'
 import monogram from '../Images/Monogram.svg'
-import resume from '../Resume.pdf'
+import resume from '../Assets/Resume.pdf'
 import { saveAs } from 'file-saver';
 
 const download = () => saveAs(resume, 'JosephSchechterResume.pdf')
