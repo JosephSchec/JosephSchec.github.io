@@ -31,13 +31,15 @@
 .link p{
   @apply  
   text-sky-500
-  bg-violet-200
+  bg-violet-100
   rounded-xl
   shadow
   shadow-slate-500
   px-2
   py-1 
   font-bold  
+  hover:text-violet-100
+  hover:bg-sky-500
 }
 .link svg{
   @apply 
