@@ -23,15 +23,14 @@ export default function Project(props) {
                 <div className={styles.links}>
                     {
                         qrCodeTo &&
-                        <a href={qrCodeTo} target={'_blank'} rel="noreferrer" className={styles.siteButton}><FiExternalLink size={40} /></a>
+                        <a href={qrCodeTo} target={'_blank'} rel="noreferrer" className={styles.siteButton} title={`view ${projectTitle}`}><FiExternalLink size={40} /></a>
                     }
-                    <a href={github} target={'_blank'} rel="noreferrer" className={styles.github}><AiFillGithub size={40} /></a>
+                    <a href={github} target={'_blank'} rel="noreferrer" className={styles.github}><AiFillGithub size={40} title='github' /></a>
 
 
 
                     {downloadApk && downloadLinkName &&
-
-                        <button className={`animate-bounce clickable ${styles.siteButton}`} onClick={download}>   <BsDownload size={40} /></button>
+                        <button className={`animate-bounce clickable ${styles.siteButton}`} onClick={download} title='download apk'>   <BsDownload size={40} /></button>
                     }</div>
 
                 <article className={styles.readMe}>{readMe}</article>

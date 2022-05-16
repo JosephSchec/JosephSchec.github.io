@@ -7,7 +7,7 @@ import {
     SiJava, SiJavascript, SiNodedotjs, SiPython, SiAngularjs, SiMongodb, SiMysql, SiReact,
 } from 'react-icons/si'
 
-export default function Tldr({opacity}) {
+export default function Tldr({ opacity }) {
     const icons = {
         size: 60,
         className: " bg-violet-500 text-slate-200 p-2 m-2 rounded-lg"
@@ -15,12 +15,12 @@ export default function Tldr({opacity}) {
 
     const front = {
         animate: {
-            x: [100,window.innerWidth-500 ],
+            x: [100, window.innerWidth - 500],
             transition: {
                 x: {
                     repeat: Infinity,
                     repeatType: "loop",
-                    duration: 10,
+                    duration: 15,
                     ease: "circInOut",
                 },
             },
@@ -28,12 +28,12 @@ export default function Tldr({opacity}) {
     };
     const back = {
         animate: {
-            x: [window.innerWidth-500 ,-500],
+            x: [window.innerWidth - 500, -500],
             transition: {
                 x: {
                     repeat: Infinity,
                     repeatType: "loop",
-                    duration:10,
+                    duration: 15,
                     ease: 'circInOut',
                 },
             },
@@ -42,47 +42,47 @@ export default function Tldr({opacity}) {
 
     return (
         <>
-        <div className={opacity ? 'newSection' : ' newSection opacity-100 hidden md:block m-auto'} >
-            <div className={styles.marquee}>
-                <motion.div
-                    className={styles.track}
-                    variants={front}
-                    animate="animate"
+            <div className={opacity ? 'newSection' : ' newSection opacity-100 hidden md:block m-auto'} >
+                <div className={styles.marquee}>
+                    <motion.div
+                        className={styles.track}
+                        variants={front}
+                        animate="animate"
 
-                >
-                    <h1 className={icons.className}>  FrontEnd:</h1>
-                    <IconContext.Provider value={icons}>
-                        <SiFramer />
-                        <SiTailwindcss />
-                        <SiBootstrap />
-                        <SiCss3 />
-                        <SiHtml5 />
-                        <SiJavascript />
-                        <SiAngularjs />
-                        <SiReact />
-                    </IconContext.Provider>
-                </motion.div>
+                    >
+                        <h1 className={icons.className}>  FrontEnd:</h1>
+                        <IconContext.Provider value={icons}>
+                            <SiFramer title="framer" />
+                            <SiTailwindcss title="tailwind" />
+                            <SiBootstrap title="bootstrap" />
+                            <SiCss3 title="css" />
+                            <SiHtml5 title="html" />
+                            <SiJavascript title="js" />
+                            <SiAngularjs title="angular" />
+                            <SiReact title='react' />
+                        </IconContext.Provider>
+                    </motion.div>
+                </div>
+
+
+
+                <div className={styles.marquee}>
+                    <motion.div
+                        className={styles.track}
+                        variants={back}
+                        animate="animate"
+                    >
+                        <h1 className={icons.className}>Backend:</h1>
+                        <IconContext.Provider value={icons}>
+                            <SiJava title="java"/>
+                            <SiPython title="python" />
+                            <SiNodedotjs title="node.js" />
+                            <SiMysql title="mysql" />
+                            <SiMongodb title="mongodb" />
+                        </IconContext.Provider>
+                    </motion.div>
+                </div>
             </div>
-
-
-
-            <div className={styles.marquee}>
-                <motion.div
-                    className={styles.track}
-                    variants={back}
-                    animate="animate"
-                >
-                    <h1 className={icons.className}>Backend:</h1>
-                    <IconContext.Provider value={icons}>
-                        <SiJava />
-                        <SiPython />
-                        <SiNodedotjs />
-                        <SiMysql />
-                        <SiMongodb />
-                    </IconContext.Provider>
-                </motion.div>
-            </div>
-        </div>
         </>
     );
 };
