@@ -21,7 +21,7 @@
     border-blue-400
    shadow-md shadow-indigo-500/50
 }
-.project a {
+.project a ,.project button {
    @apply 
    p-1.5 m-1 
    rounded-lg 
