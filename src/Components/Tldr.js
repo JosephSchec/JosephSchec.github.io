@@ -4,7 +4,8 @@ import styles from '../Styles/Tldr.module.css'
 import { IconContext } from "react-icons";
 import {
     SiTailwindcss, SiFramer, SiBootstrap, SiCss3, SiHtml5,
-    SiJava, SiJavascript, SiNodedotjs, SiPython, SiAngularjs, SiMongodb, SiMysql, SiReact,
+    SiJava, SiJavascript, SiNodedotjs, SiPython, SiAngularjs, SiMongodb, SiMysql, SiReact
+    , SiPostgresql, SiGraphql, SiApollographql, SiNextdotjs, SiTypescript
 } from 'react-icons/si'
 
 export default function Tldr({ opacity }) {
@@ -74,11 +75,15 @@ export default function Tldr({ opacity }) {
                     >
                         <h1 className={icons.className}>Backend:</h1>
                         <IconContext.Provider value={icons}>
-                            <SiJava title="java"/>
+                            <SiJava title="java" />
                             <SiPython title="python" />
+                            <SiTypescript title="TypeScript" />
                             <SiNodedotjs title="node.js" />
                             <SiMysql title="mysql" />
                             <SiMongodb title="mongodb" />
+                            <SiPostgresql title="postgres" />
+                            <SiNextdotjs title="Next.Js" />
+                            <SiGraphql title="graphQL" />
                         </IconContext.Provider>
                     </motion.div>
                 </div>

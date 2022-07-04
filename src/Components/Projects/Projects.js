@@ -31,7 +31,7 @@ export default function Projects() {
             <Project projectTitle='Snobz React-Version' qrCodeTo='https://snobzz.vercel.app/' github='https://github.com/JosephSchec/snobz-react' repository='snobz-react' />
             <Project projectTitle='Zmanim' github='https://github.com/JosephSchec/zmanim' repository='zmanim' downloadApk={zmanim} downloadLinkName='zmanim.apk' />
             <Project projectTitle='Portfolio' github='https://github.com/JosephSchec/josephschec.github.io' repository='josephschec.github.io' />
-
+            <Project projectTitle="davenfor" qrCodeTo='https://www.davenfor.us' repository='private'   />
           </Slider>
         </div>
       </div>

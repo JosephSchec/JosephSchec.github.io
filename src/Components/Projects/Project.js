@@ -11,7 +11,8 @@ const QRCode = require('qrcode.react');
 export default function Project(props) {
     const { projectTitle, qrCodeTo, github, repository, downloadApk, downloadLinkName } = props;
     const download = () => saveAs(downloadApk, downloadLinkName)
-    const readMe = useGitHub(repository)
+    let readMe = useGitHub(repository)
+
 
     return (
         <div>
@@ -25,8 +26,9 @@ export default function Project(props) {
                         qrCodeTo &&
                         <a href={qrCodeTo} target={'_blank'} rel="noreferrer" className={styles.siteButton} title={`view ${projectTitle}`}><FiExternalLink size={40} /></a>
                     }
-                    <a href={github} target={'_blank'} rel="noreferrer" className={styles.github}><AiFillGithub size={40} title='github' /></a>
-
+                    {github && <a href={github} target={'_blank'} rel="noreferrer" className={styles.github}>
+                        <AiFillGithub size={40} title='github' /></a>
+                    }
 
 
                     {downloadApk && downloadLinkName &&
