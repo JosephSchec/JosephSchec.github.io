@@ -9,12 +9,13 @@ export default function Card() {
         <>
             <div className={styles.card} >
                 {<figure >
-                    <img src={img} className='m-auto' alt="..." />
+                    <img src={img} className='m-auto' alt="Joseph-Schechter by a computer" />
                     <figcaption className={styles.about}>
                     <p><span>(Function about(){'\t{'}</span><span> {`return 'Hello , I'm Joseph, I am 
-                       Currently A Student At Agudah PCS`}</span><span> for Full Stack Web (MERN) and Software Developement.
+                       Currently schooling for my bachelors in computer science and technology.`}</span><span>
                          I enjoy solving complex problems as well as learning about new and up and coming technologies.'</span>
-                       <span> )();</span></p>
+                       <span> <span></span> )();</span>
+                      </p>
                     </figcaption>
                 </figure>} 
                    </div>

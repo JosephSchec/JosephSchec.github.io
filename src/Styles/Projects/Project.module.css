@@ -14,12 +14,13 @@
     m-3
     p-2
     opacity-80
-    h-48
+    h-60
     overflow-auto
     rounded-xl
     border-2
     border-blue-400
-   shadow-md shadow-indigo-500/50
+    shadow-md shadow-indigo-500/50
+    w-10/12
 }
 .project a ,.project button {
    @apply 

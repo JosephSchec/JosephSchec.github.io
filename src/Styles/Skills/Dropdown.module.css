@@ -11,9 +11,12 @@
     rounded-xl
     w-6/12 
     bg-violet-200
-    cursor-pointer
+    cursor-pointer 
     h-max
-    min-w-fit
+    mx-2
+    min-w-full
+    md:min-w-fit
+    md:mx-0
 }
 .title{
     @apply 
@@ -24,6 +27,7 @@
       font-bold 
       items-end
       underline
+
 }
 .title svg{
     @apply  transition duration-150 self-end 

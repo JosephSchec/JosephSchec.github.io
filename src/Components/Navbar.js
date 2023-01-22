@@ -15,7 +15,7 @@ export default function Navbar() {
 
         <div className={styles.topCenter} id='top' >
             <div className={styles.details}>
-                <a href='#top' className={styles.initials} onClick={() => document.documentElement.scrollTop = 0}><img src={monogram} alt=''></img></a>
+                <a href='#top' className={styles.initials} onClick={() => document.documentElement.scrollTop = 0}><img src={monogram} alt='JS-monogram'></img></a>
 
 
                 <ul className={styles.list}>

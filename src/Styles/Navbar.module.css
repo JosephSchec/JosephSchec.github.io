@@ -14,8 +14,8 @@
     @apply self-center m-2 cursor-pointer w-max hidden md:block
 }
 .initials:hover{
-  -webkit-animation: mymove 1s infinite; /* Chrome, Safari, Opera */
-    animation: mymove 2s infinite;
+  -webkit-animation: mymove 1s infinite; 
+    animation: mymove 3s infinite;
 }
 .list{
     @apply flex justify-center md:justify-end
